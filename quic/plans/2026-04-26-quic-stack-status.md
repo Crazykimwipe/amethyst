@@ -193,7 +193,7 @@ gates on the audio-rooms completion plan
 | 8 | 2026-05-06 | Path validation pass 1 + 2 | DCID rotation, retire-prior-to monotonicity, abrupt migration | all fixed |
 | 9 | 2026-05-07 | DoS hardening + reserved-bit checks + TLS bounds + SendBuffer shrink | bound peer-controlled buffers and channels | all fixed |
 | 10 | 2026-05-08 | Lock-split design + close-under-load + key-update PN gate | streamsLock + lifecycleLock split | all fixed; see [`2026-05-08-lock-split-design.md`](2026-05-08-lock-split-design.md) |
-| 11 | 2026-05-09 | Four-RFC compliance audit (4 parallel agents: 9000, 9001, 9002, 9221+9114+9204) | ~15 items, mostly receive-side validation gaps | catalogued in [§ RFC compliance gaps](#rfc-compliance-gaps-2026-05-09) below; **all 🔴 High and all 🟡 Medium items resolved same-day across 7 commits** |
+| 11 | 2026-05-09 | Four-RFC compliance audit (4 parallel agents: 9000, 9001, 9002, 9221+9114+9204) | ~15 items, mostly receive-side validation gaps | catalogued in [§ RFC compliance gaps](#rfc-compliance-gaps-2026-05-09) below; **all 🔴 High, all 🟡 Medium, and all actionable 🟦 Low items resolved same-day across 9 fix commits + 1 plan refresh — see PR #2815** |
 
 Every fix carries an inline `audit-N #M` reference comment so the regression
 test → fix → comment chain is auditable. The whole audit corpus is in the
